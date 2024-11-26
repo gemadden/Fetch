@@ -5,10 +5,10 @@ pygame.display.init()
 
 if use_audio:
     pygame.mixer.init()
-    day_music = pygame.mixer.Sound("day_music.MP3")
-    sunset_music = pygame.mixer.Sound("sunset_music.WAV")
-    night_music = pygame.mixer.Sound("night_music.MP3")
-    title_music = pygame.mixer.Sound("title_music.WAV")
+    day_music = pygame.mixer.Sound("day_music.mp3")
+    sunset_music = pygame.mixer.Sound("sunset_music.wav")
+    night_music = pygame.mixer.Sound("night_music.mp3")
+    title_music = pygame.mixer.Sound("title_music.wav")
 
 pygame.font.init()
 fps_clock = pygame.time.Clock() 
@@ -40,21 +40,21 @@ GREEN = [38, 106, 75]
 YELLOW = [255, 255, 0]
 ORANGE = [255, 229, 180]
 
-image = pygame.image.load("Fetch Art/title_background.PNG") #Art
+image = pygame.image.load("Fetch Art/title_background.png") #Art
 
 
 #dog art
-oliver_icon = pygame.image.load("Fetch Art/oliver_left.PNG")
+oliver_icon = pygame.image.load("Fetch Art/oliver_left.png")
 oliver_icon_rect = oliver_icon.get_rect()
-lulu_icon = pygame.image.load("Fetch Art/lulu_left.PNG")
+lulu_icon = pygame.image.load("Fetch Art/lulu_left.png")
 lulu_icon_rect = lulu_icon.get_rect()
-miles_icon = pygame.image.load("Fetch Art/miles_left.PNG")
+miles_icon = pygame.image.load("Fetch Art/miles_left.png")
 miles_icon_rect = miles_icon.get_rect()
-bear_icon = pygame.image.load("Fetch Art/bear_left.PNG")
+bear_icon = pygame.image.load("Fetch Art/bear_left.png")
 bear_icon_rect = bear_icon.get_rect()
-eevee_icon = pygame.image.load("Fetch Art/eevee_left.PNG")
+eevee_icon = pygame.image.load("Fetch Art/eevee_left.png")
 eevee_icon_rect = eevee_icon.get_rect()
-willow_icon = pygame.image.load("Fetch Art/willow_left.PNG")
+willow_icon = pygame.image.load("Fetch Art/willow_left.png")
 willow_icon_rect = willow_icon.get_rect()
 grey_bear = pygame.image.load("Fetch Art/bear_locked.png")
 grey_miles = pygame.image.load("Fetch Art/miles_locked.png")
@@ -63,16 +63,16 @@ grey_willow = pygame.image.load("Fetch Art/willow_locked.png")
 
 oliver_right_img = pygame.image.load("Fetch Art/oliver_right.png")
 oliver_left_img = pygame.image.load("Fetch Art/oliver_left.png")
-lulu_right_img = pygame.image.load("Fetch Art/lulu_right.PNG")
-lulu_left_img = pygame.image.load("Fetch Art/lulu_left.PNG")
-miles_right_img = pygame.image.load("Fetch Art/miles_right.PNG")
-miles_left_img = pygame.image.load("Fetch Art/miles_left.PNG")
-bear_right_img = pygame.image.load("Fetch Art/bear_right.PNG")
-bear_left_img = pygame.image.load("Fetch Art/bear_left.PNG")
-eevee_right_img = pygame.image.load("Fetch Art/eevee_right.PNG")
-eevee_left_img = pygame.image.load("FEtch Art/eevee_left.PNG")
-willow_right_img = pygame.image.load("Fetch Art/willow_right.PNG")
-willow_left_img = pygame.image.load("Fetch Art/willow_left.PNG")
+lulu_right_img = pygame.image.load("Fetch Art/lulu_right.png")
+lulu_left_img = pygame.image.load("Fetch Art/lulu_left.png")
+miles_right_img = pygame.image.load("Fetch Art/miles_right.png")
+miles_left_img = pygame.image.load("Fetch Art/miles_left.png")
+bear_right_img = pygame.image.load("Fetch Art/bear_right.png")
+bear_left_img = pygame.image.load("Fetch Art/bear_left.png")
+eevee_right_img = pygame.image.load("Fetch Art/eevee_right.png")
+eevee_left_img = pygame.image.load("Fetch Art/eevee_left.png")
+willow_right_img = pygame.image.load("Fetch Art/willow_right.png")
+willow_left_img = pygame.image.load("Fetch Art/willow_left.png")
 
 
 characters_right_img = [oliver_right_img, lulu_right_img, miles_right_img, bear_right_img, eevee_right_img] # , willow_right_img]
@@ -83,14 +83,14 @@ characters_left_img = [oliver_left_img, lulu_left_img, miles_left_img, bear_left
 chosen_character = oliver_icon
 chosen_rect = pygame.Rect(5, 5, 100, 100)
 
-level_one_icon = pygame.image.load("Fetch Art/ball_level.PNG")
+level_one_icon = pygame.image.load("Fetch Art/ball_level.png")
 level_one_rect = level_one_icon.get_rect()
-level_two_icon = pygame.image.load("Fetch Art/stick_level.PNG")
+level_two_icon = pygame.image.load("Fetch Art/stick_level.png")
 level_two_rect = level_two_icon.get_rect()
 level_three_icon = pygame.image.load("Fetch Art/mailman_level.png")
 level_three_rect = level_three_icon.get_rect()
-grey_level_two_icon = pygame.image.load("Fetch Art/stick_level_locked.PNG")
-grey_level_three_icon = pygame.image.load("Fetch Art/mailman_level_locked.PNG")
+grey_level_two_icon = pygame.image.load("Fetch Art/stick_level_locked.png")
+grey_level_three_icon = pygame.image.load("Fetch Art/mailman_level_locked.png")
 
 
 ball_img = pygame.image.load("Fetch Art/tennis_ball.png")
@@ -184,7 +184,7 @@ level_two_complete = False
 level_three_complete = False
 
 if use_audio:
-    pygame.mixer.music.load("title_music.WAV")
+    pygame.mixer.music.load("title_music.wav")
     pygame.mixer.music.play()
 
 paused_mode_1 = False
@@ -486,7 +486,7 @@ while is_game_running:
                     if event.key == pygame.K_UP and is_standing: # allows character to jump
                         player_velocity_y = -20
                         if use_audio:
-                            pygame.mixer.music.load("dog_bark.WAV")
+                            pygame.mixer.music.load("dog_bark.wav")
                             pygame.mixer.music.play()
                     if event.key == pygame.K_DOWN: # ALLOWS 
                         player_velocity_y = 10
@@ -726,7 +726,7 @@ while is_game_running:
                     if event.key == pygame.K_UP and is_standing: # allows character to jump
                         player_velocity_y = -20
                         if use_audio:
-                            pygame.mixer.music.load("dog_bark.WAV")
+                            pygame.mixer.music.load("dog_bark.wav")
                             pygame.mixer.music.play()
                     if event.key == pygame.K_DOWN: # ALLOWS 
                         player_velocity_y = 10
@@ -964,7 +964,7 @@ while is_game_running:
                     if event.key == pygame.K_UP and is_standing: # allows character to jump
                         player_velocity_y = -20
                         if use_audio:
-                            pygame.mixer.music.load("dog_bark.WAV")
+                            pygame.mixer.music.load("dog_bark.wav")
                             pygame.mixer.music.play()
                     if event.key == pygame.K_DOWN: # ALLOWS 
                         player_velocity_y = 10
