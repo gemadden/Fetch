@@ -10,6 +10,8 @@ To install *PyGame*, run the following from the terminal:
 pip install pygame
 ```
 
+If *Python* is not available on your system, a Windows executable is also available in the file "fetchPyInstallerWindows.zip". Unzip this file and run *fetch.exe* to play the game.
+
 ## How to Play
 
 From the terminal, run the following:
