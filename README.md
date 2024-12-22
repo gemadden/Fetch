@@ -1,8 +1,12 @@
 # Fetch
 
+## How to Download
+
+Click the green "<> Code" button up top and select "Download as ZIP".
+
 ## Requirements
 
-*Python 3* and *PyGame* are required to run **Fetch**.
+**Fetch** can be played on Windows, macOS, and Linux. *Python 3* and *PyGame* are required.
 
 To install *PyGame*, run the following from the terminal:
 
